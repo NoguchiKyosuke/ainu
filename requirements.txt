@@ -1,0 +1,26 @@
+# Core scientific stack
+numpy>=1.21
+scipy>=1.7
+pandas>=1.3
+matplotlib>=3.5
+seaborn>=0.12
+
+# Audio processing
+librosa>=0.10.1
+soundfile>=0.12.1
+
+# Similarity and ML utilities
+scikit-learn>=1.1
+# Classic DTW implementation (accurate, flexible)
+dtw-python>=1.5
+# Nice progress bars
+tqdm>=4.66
+
+# Jupyter widgets for interactivity
+ipywidgets>=8.0
+
+# Optional: deep audio embeddings (comment out if not needed)
+# torch>=2.1
+# torchaudio>=2.1
+# transformers>=4.40
+# accelerate>=0.28
