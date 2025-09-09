@@ -1,0 +1,4 @@
+# This file ensures the recordings directory is tracked by git
+# Place your recorded audio files here for analysis
+# Supported formats: WAV, FLAC, MP3, OGG, M4A
+# Recommended: 16 kHz sample rate for optimal processing

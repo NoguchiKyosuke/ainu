@@ -3,7 +3,7 @@
 Purpose: Build a Jupyter-based system to analyze recorded speech and compare it to a sample Ainu audio set, as groundwork for a future training app.
 
 Project stack
-- Python 3.10+
+- Python 3.10+ (run as venv)
 - Jupyter Notebooks (VS Code)
 - Libraries: librosa, soundfile, numpy, scipy, pandas, matplotlib, seaborn, scikit-learn, tqdm, ipywidgets
 - Optional embeddings: PyTorch, torchaudio, transformers
@@ -17,7 +17,6 @@ Project stack
 
 Conventions and best practices
 - Audio
-  - Target sample rate: 16 kHz, mono.
   - Use `src/audio_utils.load_audio` (handles resampling/mono) and `trim_silence` for VAD-like trimming.
   - Features: `extract_features` (MFCC + deltas + simple prosody), then per-utterance z-score with `zscore`.
 - Similarity
@@ -48,10 +47,9 @@ Common tasks Copilot should assist with
 - Visualizing waveforms, mel-spectrograms, similarity matrices, and DTW paths.
 - Caching features to NPZ and reusing them.
 - Optional: extracting model embeddings and combining scores (DTW + cosine).
+- adding instruction to copilot-instructions.md periodically.
 
 Quality and style
-- Keep answers short and impersonal.
-- When asked for your name, respond with: "GitHub Copilot".
 - Prefer readable, commented code. Small, testable functions.
 - Use bash-compatible commands for Linux when suggesting shell steps.
 
@@ -61,7 +59,6 @@ Setup reminders
 - Enable widgets (optional): `jupyter nbextension enable --py widgetsnbextension`
 
 Safety and data
-- Do not include or generate copyrighted data/content.
 - Be mindful of cultural and language data sensitivity; respect dataset licenses.
 
 Extension ideas
