@@ -20,7 +20,7 @@ tqdm>=4.66
 ipywidgets>=8.0
 
 # Optional: deep audio embeddings (comment out if not needed)
-# torch>=2.1
-# torchaudio>=2.1
-# transformers>=4.40
-# accelerate>=0.28
+torch>=2.1
+torchaudio>=2.1
+transformers>=4.40
+accelerate>=0.28
