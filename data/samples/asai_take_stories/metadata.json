@@ -1,0 +1,333 @@
+{
+  "collection": "Asai Take Folktale Collection",
+  "source": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/asai01.html",
+  "stories": {
+    "At01": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at01aj.html",
+      "audio_files_found": 12,
+      "audio_files_downloaded": 12,
+      "title": "Story 1"
+    },
+    "At02": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at02aj.html",
+      "audio_files_found": 79,
+      "audio_files_downloaded": 79,
+      "title": "Story 2"
+    },
+    "At03": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at03aj.html",
+      "audio_files_found": 45,
+      "audio_files_downloaded": 45,
+      "title": "Story 3"
+    },
+    "At04": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at04aj.html",
+      "audio_files_found": 79,
+      "audio_files_downloaded": 79,
+      "title": "Story 4"
+    },
+    "At05": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at05aj.html",
+      "audio_files_found": 40,
+      "audio_files_downloaded": 40,
+      "title": "Story 5"
+    },
+    "At06": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at06aj.html",
+      "audio_files_found": 49,
+      "audio_files_downloaded": 48,
+      "title": "Story 6"
+    },
+    "At07": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at07aj.html",
+      "audio_files_found": 27,
+      "audio_files_downloaded": 27,
+      "title": "Story 7"
+    },
+    "At08": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at08aj.html",
+      "audio_files_found": 84,
+      "audio_files_downloaded": 84,
+      "title": "Story 8"
+    },
+    "At09": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at09aj.html",
+      "audio_files_found": 19,
+      "audio_files_downloaded": 19,
+      "title": "Story 9"
+    },
+    "At10": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at10aj.html",
+      "audio_files_found": 7,
+      "audio_files_downloaded": 7,
+      "title": "Story 10"
+    },
+    "At11": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at11aj.html",
+      "audio_files_found": 64,
+      "audio_files_downloaded": 64,
+      "title": "Story 11"
+    },
+    "At12": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at12aj.html",
+      "audio_files_found": 39,
+      "audio_files_downloaded": 39,
+      "title": "Story 12"
+    },
+    "At13": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at13aj.html",
+      "audio_files_found": 35,
+      "audio_files_downloaded": 35,
+      "title": "Story 13"
+    },
+    "At14": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at14aj.html",
+      "audio_files_found": 52,
+      "audio_files_downloaded": 52,
+      "title": "Story 14"
+    },
+    "At15": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at15aj.html",
+      "audio_files_found": 35,
+      "audio_files_downloaded": 35,
+      "title": "Story 15"
+    },
+    "At16": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at16aj.html",
+      "audio_files_found": 22,
+      "audio_files_downloaded": 22,
+      "title": "Story 16"
+    },
+    "At17": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at17aj.html",
+      "audio_files_found": 36,
+      "audio_files_downloaded": 36,
+      "title": "Story 17"
+    },
+    "At18": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at18aj.html",
+      "audio_files_found": 40,
+      "audio_files_downloaded": 40,
+      "title": "Story 18"
+    },
+    "At19": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at19aj.html",
+      "audio_files_found": 29,
+      "audio_files_downloaded": 29,
+      "title": "Story 19"
+    },
+    "At20": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at20aj.html",
+      "audio_files_found": 32,
+      "audio_files_downloaded": 32,
+      "title": "Story 20"
+    },
+    "At21": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at21aj.html",
+      "audio_files_found": 53,
+      "audio_files_downloaded": 53,
+      "title": "Story 21"
+    },
+    "At22": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at22aj.html",
+      "audio_files_found": 11,
+      "audio_files_downloaded": 11,
+      "title": "Story 22"
+    },
+    "At23": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at23aj.html",
+      "audio_files_found": 53,
+      "audio_files_downloaded": 53,
+      "title": "Story 23"
+    },
+    "At24": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at24aj.html",
+      "audio_files_found": 28,
+      "audio_files_downloaded": 28,
+      "title": "Story 24"
+    },
+    "At25": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at25aj.html",
+      "audio_files_found": 101,
+      "audio_files_downloaded": 101,
+      "title": "Story 25"
+    },
+    "At26": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at26aj.html",
+      "audio_files_found": 38,
+      "audio_files_downloaded": 38,
+      "title": "Story 26"
+    },
+    "At27": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at27aj.html",
+      "audio_files_found": 44,
+      "audio_files_downloaded": 44,
+      "title": "Story 27"
+    },
+    "At28": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at28aj.html",
+      "audio_files_found": 69,
+      "audio_files_downloaded": 69,
+      "title": "Story 28"
+    },
+    "At29": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at29aj.html",
+      "audio_files_found": 62,
+      "audio_files_downloaded": 62,
+      "title": "Story 29"
+    },
+    "At30": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at30aj.html",
+      "audio_files_found": 52,
+      "audio_files_downloaded": 52,
+      "title": "Story 30"
+    },
+    "At31": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at31aj.html",
+      "audio_files_found": 40,
+      "audio_files_downloaded": 40,
+      "title": "Story 31"
+    },
+    "At32": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at32aj.html",
+      "audio_files_found": 89,
+      "audio_files_downloaded": 89,
+      "title": "Story 32"
+    },
+    "At33": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at33aj.html",
+      "audio_files_found": 15,
+      "audio_files_downloaded": 15,
+      "title": "Story 33"
+    },
+    "At34": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at34aj.html",
+      "audio_files_found": 57,
+      "audio_files_downloaded": 57,
+      "title": "Story 34"
+    },
+    "At35": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at35aj.html",
+      "audio_files_found": 54,
+      "audio_files_downloaded": 54,
+      "title": "Story 35"
+    },
+    "At36": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at36aj.html",
+      "audio_files_found": 43,
+      "audio_files_downloaded": 43,
+      "title": "Story 36"
+    },
+    "At37": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at37aj.html",
+      "audio_files_found": 77,
+      "audio_files_downloaded": 77,
+      "title": "Story 37"
+    },
+    "At38": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at38aj.html",
+      "audio_files_found": 101,
+      "audio_files_downloaded": 101,
+      "title": "Story 38"
+    },
+    "At39": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at39aj.html",
+      "audio_files_found": 37,
+      "audio_files_downloaded": 37,
+      "title": "Story 39"
+    },
+    "At40": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at40aj.html",
+      "audio_files_found": 37,
+      "audio_files_downloaded": 37,
+      "title": "Story 40"
+    },
+    "At41": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at41aj.html",
+      "audio_files_found": 81,
+      "audio_files_downloaded": 81,
+      "title": "Story 41"
+    },
+    "At42": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at42aj.html",
+      "audio_files_found": 77,
+      "audio_files_downloaded": 77,
+      "title": "Story 42"
+    },
+    "At43": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at43aj.html",
+      "audio_files_found": 87,
+      "audio_files_downloaded": 87,
+      "title": "Story 43"
+    },
+    "At44": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at44aj.html",
+      "audio_files_found": 34,
+      "audio_files_downloaded": 34,
+      "title": "Story 44"
+    },
+    "At45": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at45aj.html",
+      "audio_files_found": 34,
+      "audio_files_downloaded": 34,
+      "title": "Story 45"
+    },
+    "At46": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at46aj.html",
+      "audio_files_found": 106,
+      "audio_files_downloaded": 105,
+      "title": "Story 46"
+    },
+    "At47": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at47aj.html",
+      "audio_files_found": 41,
+      "audio_files_downloaded": 41,
+      "title": "Story 47"
+    },
+    "At48": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at48aj.html",
+      "audio_files_found": 48,
+      "audio_files_downloaded": 48,
+      "title": "Story 48"
+    },
+    "At49": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at49aj.html",
+      "audio_files_found": 78,
+      "audio_files_downloaded": 78,
+      "title": "Story 49"
+    },
+    "At50": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at50aj.html",
+      "audio_files_found": 65,
+      "audio_files_downloaded": 65,
+      "title": "Story 50"
+    },
+    "At51": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at51aj.html",
+      "audio_files_found": 45,
+      "audio_files_downloaded": 45,
+      "title": "Story 51"
+    },
+    "At52": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at52aj.html",
+      "audio_files_found": 86,
+      "audio_files_downloaded": 86,
+      "title": "Story 52"
+    },
+    "At53": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at53aj.html",
+      "audio_files_found": 21,
+      "audio_files_downloaded": 21,
+      "title": "Story 53"
+    },
+    "At54": {
+      "url": "https://www.aa.tufs.ac.jp/~mmine/kiki_gen/murasaki/at54aj.html",
+      "audio_files_found": 129,
+      "audio_files_downloaded": 129,
+      "title": "Story 54"
+    }
+  },
+  "total_stories": 54,
+  "total_audio_files_found": 2818,
+  "total_audio_files_downloaded": 2816
+}
