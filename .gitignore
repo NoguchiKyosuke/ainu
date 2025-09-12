@@ -51,6 +51,7 @@ data/recordings/**/*.flac
 data/recordings/**/*.mp3
 data/recordings/**/*.ogg
 data/recordings/**/*.m4a
+data/jvs_music_ver1/
 
 # Keep directory structure but ignore audio content
 !data/samples/.gitkeep

@@ -24,3 +24,7 @@ torch>=2.1
 torchaudio>=2.1
 transformers>=4.40
 accelerate>=0.28
+
+# Web scraping (for folklore corpus downloader)
+requests>=2.31
+beautifulsoup4>=4.12

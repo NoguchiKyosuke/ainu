@@ -336,3 +336,159 @@ If you reorganize `data/samples/`, re-run Cell 9 to rebuild `samples_df` before 
 ### Optional Features
 - **Neural embeddings**: Uncomment torch/transformers lines in requirements.txt
 - **GPU acceleration**: Install CUDA-compatible PyTorch for faster embedding extraction
+
+## Montreal Forced Aligner (MFA) Integration (Prototype)
+
+This repository now includes a scaffold to build forced alignments for the Ainu folklore corpus at: https://ainu.ninjal.ac.jp/folklore/corpus/jp/
+
+### Why Alignments?
+Forced alignment yields time-stamped word/phone boundaries (TextGrid files) enabling:
+- Segment-level pronunciation feedback (timing & substitution detection)
+- Vowel length / gemination analysis
+- Precise pitch & formant extraction per phone segment
+
+### Directory Layout
+```
+mfa/
+  resources/
+    ainu_language.yaml   # MFA language config (phoneset + parameters, draft)
+    ainu_base.dict       # Seed dictionary (manual overrides)
+    ainu.dict            # Generated merged dictionary (output of builder)
+  corpus_prep/
+    prepare_corpus.py    # Builds MFA corpus/ with .lab transcripts
+  dictionary_builder.py  # Generates ainu.dict from corpus + base entries
+  run_mfa.sh             # Helper script for prepare/dict/align/train
+```
+
+### Install MFA
+```
+pip install montreal-forced-aligner
+mfa version
+```
+If system dependencies are required (e.g. Kaldi tools), consult MFA docs: https://montreal-forced-aligner.readthedocs.io/
+
+### Step 1: Prepare Corpus
+Organize or point to your audio root (e.g. `data/samples/folklore`). Then:
+```
+bash mfa/run_mfa.sh prepare data/samples/folklore mfa/corpus
+```
+Outputs a symlinked corpus tree with `.lab` transcripts (placeholder text = `UNKNOWN` if no mapping supplied). Provide a CSV mapping for real text:
+```
+relpath,transcription
+Story1/utt001.wav,manu kor an ...
+Story1/utt002.wav, ...
+```
+Run with mapping:
+```
+python mfa/corpus_prep/prepare_corpus.py --audio-root data/samples/folklore --out-dir mfa/corpus --mapping transcripts.csv
+```
+
+### Step 2: Build Dictionary
+```
+bash mfa/run_mfa.sh dict mfa/corpus mfa/resources/ainu.dict
+```
+Merges manual `ainu_base.dict` with heuristic G2P over observed corpus words.
+
+### Step 3: Align
+```
+bash mfa/run_mfa.sh align mfa/corpus mfa/resources/ainu.dict mfa/resources/ainu_language.yaml mfa/aligned
+```
+Results:
+- TextGrid files in `mfa/aligned/` with word & (if supported) phone tiers
+
+### (Optional) Step 4: Train Acoustic Model
+```
+bash mfa/run_mfa.sh train mfa/corpus mfa/resources/ainu.dict mfa/resources/ainu_language.yaml mfa/model
+```
+Produces a reusable MFA acoustic model for faster future alignment.
+
+### Improving Quality
+- Replace placeholder transcripts (`UNKNOWN`) with accurate text.
+- Expand `ainu_base.dict` with authoritative phonemic transcriptions.
+- Refine phoneset in `ainu_language.yaml` (long vowels, gemination, affricates, glottal stop, dialectal variants).
+- Add disambiguation for homographs if needed.
+
+### Using Alignments in Notebooks
+After alignment, parse TextGrid boundaries to:
+- Slice features per phone and compute phone-level DTW or distance metrics.
+- Provide targeted feedback: which segment deviated most.
+- Normalize durations: compare expected vs produced segment length.
+
+Example (future work):
+```python
+import tgt
+grid = tgt.read_textgrid('mfa/aligned/Story1/utt001.TextGrid')
+phones = [ti for ti in grid.get_tier_by_name('phones')]  # iterate intervals
+```
+
+### Next Steps (Planned)
+1. Integrate TextGrid parser utility in `src/`.
+2. Map aligned phones back into feedback JSON for segment-level coaching.
+3. Add composite score combining DTW + segment accuracy + duration variance.
+
+Contribution welcome for phoneme inventory refinement and verified dictionary entries.
+
+## Folklore Corpus Downloader (Prototype)
+
+A helper script is included to assist in locally mirroring metadata and (where permissible) audio references from the Ainu folklore corpus website for research preparation. Use responsibly.
+
+Path: `mfa/download_folklore_corpus.py`
+
+### IMPORTANT LEGAL / ETHICAL NOTICE
+- Check the site's Terms of Use and robots.txt before large-scale crawling.
+- Download only what you need; apply rate limiting (default delay is 1.5s between requests).
+- Do not redistribute downloaded audio or texts without explicit permission.
+- Cite the original source in any research outputs.
+
+### Install Additional Dependencies
+`requirements.txt` now includes:
+```
+requests
+beautifulsoup4
+```
+Install (if not already):
+```
+pip install -r requirements.txt
+```
+
+### Basic Usage
+```
+python mfa/download_folklore_corpus.py --out data/raw_folklore --delay 2.0
+```
+Creates structure:
+```
+data/raw_folklore/
+  index_links.csv
+  pages/                 # raw HTML of story pages
+  audio/                 # per-story audio (if direct links discoverable)
+  metadata/              # per-story JSON metadata
+  stories_metadata.csv   # aggregated metadata
+```
+
+### Options
+| Flag | Description |
+|------|-------------|
+| `--limit N` | Stop after first N stories (debugging) |
+| `--delay S` | Seconds between HTTP requests (throttle) |
+| `--overwrite` | Redownload & replace existing audio/pages |
+| `--index-only` | Skip audio downloads; just build link & metadata index |
+
+### Resuming
+Re-run with same output directory; existing audio is skipped unless `--overwrite` is set.
+
+### After Download
+1. Inspect `stories_metadata.csv` to confirm coverage.
+2. Manually curate transcriptions or build a mapping CSV for `prepare_corpus.py`.
+3. Run MFA corpus prep + dictionary build + alignment.
+
+### Limitations
+- Audio links may be embedded or require scripted interactions not handled yet.
+- Transcription extraction is heuristic (grabs large text blocks); refine with site-specific parsing if needed.
+- Japanese text retained; no automatic romanization performed.
+
+### Future Improvements
+- Add multi-page traversal if pagination exists.
+- More robust audio URL detection (JS player reversal).
+- Configurable metadata field extraction.
+
+Contributions refining respectful crawling patterns or adding canonical citation templates are welcome.
