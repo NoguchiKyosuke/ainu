@@ -1,0 +1,57 @@
+{
+  "model_name": "BestCNN",
+  "best_test_accuracy": 58.333333333333336,
+  "best_epoch": 1,
+  "final_test_accuracy": 58.333333333333336,
+  "train_accuracies": [
+    57.57575757575758
+  ],
+  "test_accuracies": [
+    58.333333333333336
+  ],
+  "train_losses": [
+    0.9630216598510742
+  ],
+  "test_losses": [
+    0.680537223815918
+  ],
+  "final_class_accuracy": {
+    "0": 75.0,
+    "1": 0.0,
+    "2": 100.0
+  },
+  "timestamp": "20250912_154557",
+  "y_true": [
+    1,
+    0,
+    2,
+    0,
+    2,
+    1,
+    1,
+    1,
+    0,
+    2,
+    2,
+    0
+  ],
+  "y_pred": [
+    2,
+    0,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    0,
+    2,
+    2,
+    0
+  ],
+  "idx_to_collection": {
+    "0": "asai_take_stories",
+    "1": "kimura_kimi_stories",
+    "2": "oda_ito_stories"
+  }
+}

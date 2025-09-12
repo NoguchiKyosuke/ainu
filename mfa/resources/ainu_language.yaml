@@ -1,0 +1,72 @@
+language_name: ainu# Montreal Forced Aligner language configuration for Ainu (prototype)
+
+ignore_case: true# Reference corpus: https://ainu.ninjal.ac.jp/folklore/corpus/jp/
+
+silence_phone: pau# NOTE: This is a starting point. Refine phoneset and grapheme mapping with linguistic expertise.
+
+optional_silence_phone: pau
+
+phones:language_name: ainu
+
+  - auses_case: false
+
+  - iignore_case: true
+
+  - usplit_on_clitics: false
+
+  - e# Graphemes observed (Latin script) - extend as required
+
+  - oorthography: [a, i, u, e, o, k, s, t, c, n, h, m, r, w, y, p, ', -]
+
+  - k# Basic phoneset (broad) - refine for geminates, long vowels, affricates, uvulars if present in source orthography
+
+  - sphones:
+
+  - t  - a
+
+  - c  - i
+
+  - n  - u
+
+  - h  - e
+
+  - m  - o
+
+  - r  - k
+
+  - w  - s
+
+  - y  - t
+
+  - p  - c    # /t͡s/ or /t͡ʃ/ depending on dialect; treat broadly first
+
+  - q  - n
+
+  - pau  - h
+
+training:  - m
+
+  num_jobs: 4  - r
+
+  beam: 10  - w
+
+  retry_beam: 40  - y
+
+  - p
+  - q    # placeholder for glottal stop or ejective if needed
+  - pau  # silence/pause token
+
+punctuation: ['.', ',', '?', '!', '"', '…']
+clitic_markers: []
+word_break_markers: [' ']  # whitespace separation
+silence_phone: pau
+optional_silence_phone: pau
+# Add pronunciation variants threshold or other MFA parameters if required
+
+features: {}
+
+# Training parameters (defaults are generally fine; tune later)
+training:
+  num_jobs: 4
+  beam: 10
+  retry_beam: 40

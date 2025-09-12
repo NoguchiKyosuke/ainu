@@ -1,0 +1,10 @@
+# Base Ainu dictionary (prototype)# Ainu base pronunciation dictionary (prototype)
+
+MANU m a n u# Format: WORD PHONE_SEQ
+
+# Populate via dictionary_builder.py; this file is a seed / manual overrides.
+# Example entries (illustrative only; verify with authoritative sources):
+MANU m a n u
+KOR n o r
+ANE a n e
+# Add curated / corrected forms below; auto builder will merge without overwriting manual lines.
