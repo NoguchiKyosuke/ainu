@@ -285,6 +285,34 @@ def pipeline(recording, sample):
 
 This explanation should help contributors modify or extend analysis logic confidently.
 
+### Notebook Cell 9: Sample Dataset Indexing
+
+Cell 9 in the notebook defines the logic that enumerates and labels all reference (sample) audio files. It performs these steps:
+
+1. Defines `infer_label_from_path(p)` which assigns a class/label using the parent directory name of each file (folder-based labeling convention: `data/samples/<label>/<file>.wav`).
+2. Calls `list_audio_files(SAMPLES_DIR)` to recursively gather supported audio files (WAV/FLAC/etc.).
+3. Warns the user if no files are found so the workflow can be halted early.
+4. Builds a pandas DataFrame `samples_df` with columns:
+  - `path`: absolute or project-relative path string
+  - `label`: inferred category (story / speaker / token grouping)
+  - `relpath`: path relative to `data/samples/` (useful for display & exporting)
+5. Prints the total count of indexed files and displays the head (first 10 rows) for verification.
+
+Purpose in pipeline:
+- Establishes the searchable reference corpus used in later DTW / cosine similarity ranking.
+- Supplies labels for grouping, filtering, or stratified evaluation.
+
+Typical Output Example:
+```
+Indexed 2816 sample files.
+        path              label                relpath
+0  data/samples/StoryA/...    StoryA    StoryA/file1.wav
+1  data/samples/StoryA/...    StoryA    StoryA/file2.wav
+...
+```
+
+If you reorganize `data/samples/`, re-run Cell 9 to rebuild `samples_df` before performing comparisons.
+
 ## Development Notes
 - **Audio format**: WAV (16 kHz recommended). Other formats supported via soundfile.
 - **Feature pipeline**: MFCCs + spectral features → per-utterance z-score normalization
